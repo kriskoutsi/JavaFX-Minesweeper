@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="myMenuBar" prefHeight="26.0" prefWidth="600.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Application">
+                     <items>
+                        <MenuItem fx:id="create" mnemonicParsing="false" onAction="#createProgram" text="Create" />
+                        <MenuItem fx:id="load" mnemonicParsing="false" onAction="#loadProgram" text="Load" />
+                        <MenuItem fx:id="start" mnemonicParsing="false" onAction="#startProgram" text="Start" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Details">
+                     <items>
+                        <MenuItem fx:id="rounds" mnemonicParsing="false" onAction="#showRounds" text="Rounds" />
+                        <MenuItem fx:id="solution" mnemonicParsing="false" onAction="#showSolution" text="Solution" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <AnchorPane fx:id="topAnchor" layoutY="30.0" prefHeight="53.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+         </children></AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="grid" prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></AnchorPane>
+   </center>
+</BorderPane>
