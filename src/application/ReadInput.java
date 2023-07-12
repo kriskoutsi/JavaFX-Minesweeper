@@ -22,7 +22,7 @@ public class ReadInput {
 	}
 	
 	public static int[] readInput(String fileName) {
-		String initialFile = "D:\\downloads\\eclipse\\Eclipse-Workspace\\MediaLab\\medialab\\";
+		String initialFile = "medialab\\";
 		int [] inpInt = new int[5];
 		int levelInt, minesInt, timeInt, hyperMineInt;
 		File file = new File(initialFile+fileName+".txt");

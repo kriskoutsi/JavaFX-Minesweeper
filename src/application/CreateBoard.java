@@ -81,13 +81,13 @@ public class CreateBoard {
 		}
 		// Create a file and place the mines location
 		try {
-			File minesFile = new File("D:\\downloads\\eclipse\\Eclipse-Workspace\\MediaLab\\medialab\\mines.txt");
+			File minesFile = new File("medialab\\mines.txt");
 			boolean created = minesFile.createNewFile();
 			// If the file exists, delete it and create a new one 
 			if (!created) {
 				minesFile.delete();
 			}
-			FileWriter writeMines = new FileWriter("D:\\downloads\\eclipse\\Eclipse-Workspace\\MediaLab\\medialab\\mines.txt");
+			FileWriter writeMines = new FileWriter("medialab\\mines.txt");
 			for (int row=0; row<dimension; row++) {
 				for (int col=0; col<dimension; col++) {
 					if (board[row][col] == 9) {

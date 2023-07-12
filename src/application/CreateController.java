@@ -34,13 +34,13 @@ public class CreateController {
 	public void create(ActionEvent event) throws IOException{
 		
 		// Part 1. Create the file
-		File newFile = new File("D:\\downloads\\eclipse\\Eclipse-Workspace\\MediaLab\\medialab\\" + fileNameTextField.getText() + ".txt");
+		File newFile = new File("medialab\\" + fileNameTextField.getText() + ".txt");
 		boolean created = newFile.createNewFile();
 		// If the file exists, delete it and create a new one 
 		if (!created) {
 			newFile.delete();
 		}
-		FileWriter writeFile = new FileWriter("D:\\downloads\\eclipse\\Eclipse-Workspace\\MediaLab\\medialab\\" + fileNameTextField.getText() + ".txt");
+		FileWriter writeFile = new FileWriter("medialab\\" + fileNameTextField.getText() + ".txt");
 		writeFile.write(levelTextField.getText() + "\n");
 		writeFile.write(minesTextField.getText() + "\n");
 		writeFile.write(totalTimeTextField.getText() + "\n");
